@@ -1,0 +1,73 @@
+{
+  "status": "success",
+  "data": {
+    "persona": {
+      "id": "p_salaried_01",
+      "name": "Ananya Sharma",
+      "occupation": "Senior Software Engineer",
+      "type": "SALARIED",
+      "avatarUrl": "assets/avatars/salaried.png"
+    },
+    "financialSummary": {
+      "currency": "INR",
+      "currentBalance": 185000.00,
+      "projectedIncome30D": 120000.00,
+      "projectedSpend30D": 65000.00,
+      "minimumBuffer": 20000.00
+    },
+    "contextualTriggers": {
+      "heroBadge": "PAYCHECK CLEARED",
+      "heroSubtext": "Rent & recurring bills expected in 3 days",
+      "microActions": [
+        {
+          "label": "Pay House Rent",
+          "subtext": "Due in 2 days",
+          "icon": "home_work_outlined",
+          "intent": "PAY_BILL",
+          "prompt": "Pay my house rent"
+        },
+        {
+          "label": "Lock Card",
+          "subtext": "Misplaced online",
+          "icon": "credit_card_off_outlined",
+          "intent": "LOCK_CARD",
+          "prompt": "Lock my debit card"
+        },
+        {
+          "label": "Pay EB Bill",
+          "subtext": "Frequent contact",
+          "icon": "send_rounded",
+          "intent": "PAY_BILL",
+          "prompt": "Pay my electricity bill"
+        }
+      ]
+    },
+    "spendByCategory": [
+      { "category": "RENT", "amount": 28500.00 },
+      { "category": "DINING", "amount": 9400.00 },
+      { "category": "GROCERIES", "amount": 8200.00 },
+      { "category": "SHOPPING", "amount": 7600.00 },
+      { "category": "UTILITIES", "amount": 4300.00 },
+      { "category": "TRANSPORT", "amount": 3500.00 },
+      { "category": "OTHERS", "amount": 2000.00 },
+      { "category": "SUBSCRIPTIONS", "amount": 1500.00 }
+    ],
+    "recentTransactions": [
+      { "id": "t_s01", "date": "2026-10-31", "description": "Salary credit - Infotech Solutions", "amount": 120000.00, "type": "CREDIT", "category": "INCOME" },
+      { "id": "t_s02", "date": "2026-10-30", "description": "Food delivery order", "amount": 640.00, "type": "DEBIT", "category": "DINING" },
+      { "id": "t_s03", "date": "2026-10-29", "description": "Grocery store", "amount": 2350.00, "type": "DEBIT", "category": "GROCERIES" },
+      { "id": "t_s04", "date": "2026-10-27", "description": "Video streaming subscription", "amount": 649.00, "type": "DEBIT", "category": "SUBSCRIPTIONS" },
+      { "id": "t_s05", "date": "2026-10-25", "description": "Online fashion purchase", "amount": 3200.00, "type": "DEBIT", "category": "SHOPPING" },
+      { "id": "t_s06", "date": "2026-10-22", "description": "Electricity bill", "amount": 1850.00, "type": "DEBIT", "category": "UTILITIES" },
+      { "id": "t_s07", "date": "2026-10-20", "description": "Cab ride", "amount": 420.00, "type": "DEBIT", "category": "TRANSPORT" },
+      { "id": "t_s08", "date": "2026-10-18", "description": "Restaurant dinner", "amount": 980.00, "type": "DEBIT", "category": "DINING" },
+      { "id": "t_s09", "date": "2026-10-08", "description": "Mobile postpaid bill", "amount": 799.00, "type": "DEBIT", "category": "UTILITIES" },
+      { "id": "t_s10", "date": "2026-10-05", "description": "House rent - landlord", "amount": 28500.00, "type": "DEBIT", "category": "RENT" }
+    ],
+    "holdings": [],
+    "goals": [
+      { "name": "Emergency fund", "target": 300000.00 },
+      { "name": "Europe trip", "target": 250000.00 }
+    ]
+  }
+}

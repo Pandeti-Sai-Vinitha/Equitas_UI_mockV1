@@ -1,0 +1,85 @@
+{
+  "status": "success",
+  "data": {
+    "products": [
+      {
+        "productId": "FD_RETAIL",
+        "recommendationId": "rec_fd_01",
+        "segments": ["SALARIED"],
+        "category": "INVESTMENT",
+        "actionType": "OPEN_FD",
+        "title": "High-Yield Fixed Deposit",
+        "descriptionTemplate": "You have {surplus} idle balance available for deployment over the next 30 days.",
+        "rate": 7.20,
+        "terms": {
+          "surplusShare": 0.7,
+          "roundTo": 5000,
+          "minAmount": 10000,
+          "defaultTenorMonths": 12,
+          "tenorOptions": [6, 12, 24],
+          "payoutOption": "AT_MATURITY",
+          "autoRenew": true
+        }
+      },
+      {
+        "productId": "FD_BUSINESS",
+        "recommendationId": "rec_fd_01",
+        "segments": ["BUSINESS"],
+        "category": "INVESTMENT",
+        "actionType": "OPEN_FD",
+        "title": "Business Surplus Fixed Deposit",
+        "descriptionTemplate": "Park {surplus} of surplus working capital and earn while it waits.",
+        "rate": 7.50,
+        "terms": {
+          "surplusShare": 0.6,
+          "roundTo": 10000,
+          "minAmount": 25000,
+          "defaultTenorMonths": 6,
+          "tenorOptions": [3, 6, 12],
+          "payoutOption": "AT_MATURITY",
+          "autoRenew": false
+        }
+      },
+      {
+        "productId": "MERCHANT_OD",
+        "recommendationId": "rec_credit_01",
+        "segments": ["BUSINESS"],
+        "category": "CREDIT",
+        "actionType": "FLEXI_CREDIT_LINE",
+        "title": "Merchant Overdraft Line",
+        "descriptionTemplate": "Upcoming liquidity gap of {deficit} detected in next 30 days due to vendor payables.",
+        "rate": 11.50,
+        "terms": {
+          "productType": "CREDIT_LINE",
+          "deficitBuffer": 15000,
+          "roundTo": 5000,
+          "preApproved": true,
+          "zeroProcessingFee": true,
+          "defaultTenorMonths": 12,
+          "minTenorMonths": 3,
+          "maxTenorMonths": 24
+        }
+      },
+      {
+        "productId": "PERSONAL_LOAN",
+        "recommendationId": "rec_loan_01",
+        "segments": ["SALARIED"],
+        "category": "CREDIT",
+        "actionType": "APPLY_LOAN",
+        "title": "Pre-Approved Personal Loan",
+        "descriptionTemplate": "Planned spends exceed income by {deficit} this month. A pre-approved loan covers the gap.",
+        "rate": 12.00,
+        "terms": {
+          "productType": "PERSONAL_LOAN",
+          "deficitBuffer": 15000,
+          "roundTo": 5000,
+          "preApproved": true,
+          "zeroProcessingFee": false,
+          "defaultTenorMonths": 12,
+          "minTenorMonths": 6,
+          "maxTenorMonths": 36
+        }
+      }
+    ]
+  }
+}

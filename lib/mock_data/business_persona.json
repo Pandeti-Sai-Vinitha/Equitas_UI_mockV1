@@ -1,0 +1,69 @@
+{
+  "status": "success",
+  "data": {
+    "persona": {
+      "id": "p_biz_02",
+      "name": "Rajesh Traders",
+      "occupation": "Wholesale Electronics Merchant",
+      "type": "BUSINESS",
+      "avatarUrl": "assets/avatars/business.png"
+    },
+    "financialSummary": {
+      "currency": "INR",
+      "currentBalance": 45000.00,
+      "projectedIncome30D": 210000.00,
+      "projectedSpend30D": 310000.00,
+      "minimumBuffer": 10000.00
+    },
+    "contextualTriggers": {
+      "heroBadge": "MERCHANT SETTLEMENT DUE",
+      "heroSubtext": "Impending supplier payables detected",
+      "microActions": [
+        {
+          "label": "Approve Payroll",
+          "subtext": "12 employees",
+          "icon": "groups_outlined",
+          "intent": "PAY_BILL",
+          "prompt": "Approve payroll for my 12 employees"
+        },
+        {
+          "label": "Vendor Payout",
+          "subtext": "Electronics supplier",
+          "icon": "receipt_long_outlined",
+          "intent": "NEED_CREDIT",
+          "prompt": "Can I pay my electronics supplier this week?"
+        },
+        {
+          "label": "GST Tax Reserve",
+          "subtext": "Auto-calculated",
+          "icon": "account_balance_outlined",
+          "intent": "SPEND_INSIGHT",
+          "prompt": "How much should I keep aside for GST?"
+        }
+      ]
+    },
+    "spendByCategory": [
+      { "category": "SUPPLIER_PAYMENTS", "amount": 220000.00 },
+      { "category": "PAYROLL", "amount": 54000.00 },
+      { "category": "RENT", "amount": 18000.00 },
+      { "category": "GST", "amount": 12000.00 },
+      { "category": "UTILITIES", "amount": 6000.00 }
+    ],
+    "recentTransactions": [
+      { "id": "t_b01", "date": "2026-10-31", "description": "UPI collections - retail counter", "amount": 38500.00, "type": "CREDIT", "category": "SALES" },
+      { "id": "t_b02", "date": "2026-10-30", "description": "Card settlement - POS", "amount": 52400.00, "type": "CREDIT", "category": "SALES" },
+      { "id": "t_b03", "date": "2026-10-29", "description": "Supplier - electronics distributor", "amount": 64000.00, "type": "DEBIT", "category": "SUPPLIER_PAYMENTS" },
+      { "id": "t_b04", "date": "2026-10-28", "description": "Shop rent", "amount": 18000.00, "type": "DEBIT", "category": "RENT" },
+      { "id": "t_b05", "date": "2026-10-25", "description": "Electricity - shop", "amount": 4200.00, "type": "DEBIT", "category": "UTILITIES" },
+      { "id": "t_b06", "date": "2026-10-22", "description": "Card settlement - POS", "amount": 47300.00, "type": "CREDIT", "category": "SALES" },
+      { "id": "t_b07", "date": "2026-10-20", "description": "GST payment - Q2", "amount": 12000.00, "type": "DEBIT", "category": "GST" },
+      { "id": "t_b08", "date": "2026-10-15", "description": "Supplier - electronics distributor", "amount": 58000.00, "type": "DEBIT", "category": "SUPPLIER_PAYMENTS" },
+      { "id": "t_b09", "date": "2026-10-12", "description": "UPI collections - retail counter", "amount": 41200.00, "type": "CREDIT", "category": "SALES" },
+      { "id": "t_b10", "date": "2026-10-07", "description": "Payroll - 12 employees", "amount": 54000.00, "type": "DEBIT", "category": "PAYROLL" }
+    ],
+    "holdings": [],
+    "goals": [
+      { "name": "Festive season inventory", "target": 400000.00 }
+    ]
+  }
+}
